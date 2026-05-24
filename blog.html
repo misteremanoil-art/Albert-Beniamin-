@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articole - Albert Beniamin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Albert Beniamin</h1>
+        <p class="tagline">Reflecții asupra credinței și spiritualității</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="despre.html" class="nav-link">Despre mine</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-pdf">
+      <h2>Proiecte PDF originale</h2>
+      <p>Aceste PDF-uri sunt lucrări autentice realizate de mine. Fiecare document este prezentat ca un articol vizual, cu pagini reale afișate direct în site.</p>
+      <a href="index.html" class="btn btn-secondary">Înapoi la start</a>
+    </section>
+
+    <section class="featured-articles pdf-highlight-section">
+      <h3>Articole PDF</h3>
+      <p class="article-excerpt">Selecție de documente proprii, cu vizualizări integrate și un design inspirat din conținutul fiecărui PDF.</p>
+      <div class="articles-grid">
+        <article class="article-card pdf-card" data-pdf="./pdfs/Curierul_Adventist_Decembrie_2024.pdf">
+          <a class="article-link" href="pdf-viewer.html?file=Curierul_Adventist_Decembrie_2024.pdf">
+            <div class="pdf-card-visual">
+              <canvas class="pdf-thumb" aria-hidden="true"></canvas>
+              <span class="pdf-card-preview-label">Copertă</span>
+            </div>
+            <div>
+              <div class="article-header">
+                <h4>Curierul Adventist - Decembrie 2024</h4>
+                <span class="article-date">PDF</span>
+              </div>
+              <span class="pdf-badge">Original</span>
+              <p class="article-excerpt">Lectură directă pe site, într-o pagină dedicată cu aspect de articol.</p>
+              <span class="read-more">Deschide PDF →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card pdf-card" data-pdf="./pdfs/March 2026 issue of Ministry.pdf">
+          <a class="article-link" href="pdf-viewer.html?file=March%202026%20issue%20of%20Ministry.pdf">
+            <div class="pdf-card-visual">
+              <canvas class="pdf-thumb" aria-hidden="true"></canvas>
+              <span class="pdf-card-preview-label">Copertă</span>
+            </div>
+            <div>
+              <div class="article-header">
+                <h4>March 2026 issue of Ministry</h4>
+                <span class="article-date">PDF</span>
+              </div>
+              <span class="pdf-badge">Original</span>
+              <p class="article-excerpt">Ediție completă din martie 2026, integrată într-o pagină de lectură cu scroll.</p>
+              <span class="read-more">Deschide PDF →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card pdf-card" data-pdf="./pdfs/Pilda Scuzelor (1) Curierul-Adventist-August-2025.pdf">
+          <a class="article-link" href="pdf-viewer.html?file=Pilda%20Scuzelor%20(1)%20Curierul-Adventist-August-2025.pdf">
+            <div class="pdf-card-visual">
+              <canvas class="pdf-thumb" aria-hidden="true"></canvas>
+              <span class="pdf-card-preview-label">Copertă</span>
+            </div>
+            <div>
+              <div class="article-header">
+                <h4>Pilda Scuzelor - August 2025</h4>
+                <span class="article-date">PDF</span>
+              </div>
+              <span class="pdf-badge">Original</span>
+              <p class="article-excerpt">Material editorial din august 2025, redat direct în pagină cu grafica originală.</p>
+              <span class="read-more">Deschide PDF →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card pdf-card" data-pdf="./pdfs/Pilda scuzelor_Curierul Adventist_2025.pdf">
+          <a class="article-link" href="pdf-viewer.html?file=Pilda%20scuzelor_Curierul%20Adventist_2025.pdf">
+            <div class="pdf-card-visual">
+              <canvas class="pdf-thumb" aria-hidden="true"></canvas>
+              <span class="pdf-card-preview-label">Copertă</span>
+            </div>
+            <div>
+              <div class="article-header">
+                <h4>Pilda scuzelor - Curierul Adventist 2025</h4>
+                <span class="article-date">PDF</span>
+              </div>
+              <span class="pdf-badge">Original</span>
+              <p class="article-excerpt">Vizualizează documentul direct pe site, păstrând designul și textul original.</p>
+              <span class="read-more">Deschide PDF →</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Albert Beniamin. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.10.111/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
