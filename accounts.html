@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conturi - Albert Beniamin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Albert Beniamin</h1>
+        <p class="tagline">Reflecții asupra credinței și spiritualității</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="despre.html" class="nav-link">Despre mine</a>
+        <a href="accounts.html" class="nav-link active">Conturi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-pdf">
+      <h2>Crează și gestionează conturi</h2>
+      <p>Un spațiu sigur pentru a-ți crea un cont și a te autentifica. Datele sunt păstrate pe server și poți reveni oricând.</p>
+      <a href="blog.html" class="btn btn-secondary">Înapoi la articole</a>
+    </section>
+
+    <section class="account-section">
+      <div class="account-grid">
+        <div class="account-card">
+          <h3>Înregistrare</h3>
+          <form id="register-form">
+            <div class="form-group">
+              <label for="register-name">Nume complet</label>
+              <input id="register-name" name="name" class="form-input" type="text" required placeholder="Numele tău">
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email</label>
+              <input id="register-email" name="email" class="form-input" type="email" required placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="register-password">Parolă</label>
+              <input id="register-password" name="password" class="form-input" type="password" required placeholder="Parola ta">
+            </div>
+            <button type="submit" class="btn">Creează cont</button>
+          </form>
+        </div>
+
+        <div class="account-card">
+          <h3>Autentificare</h3>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" class="form-input" type="email" required placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="login-password">Parolă</label>
+              <input id="login-password" name="password" class="form-input" type="password" required placeholder="Parola ta">
+            </div>
+            <button type="submit" class="btn">Conectează-te</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="account-status" class="article-content account-status" hidden>
+        <p id="account-message"></p>
+        <button id="logout-button" class="btn btn-secondary">Deconectează-te</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Albert Beniamin. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>
